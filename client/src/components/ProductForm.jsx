@@ -33,7 +33,7 @@ const ProductForm = props => {
             </div>
             <div className="form-group">
                 <label>Price</label>
-                <input type="number" className="form-control" onChange={ e => setPrice(e.target.value)} value={price}/>
+                <input type="number" step="0.01" className="form-control" onChange={ e => setPrice(e.target.value)} value={price}/>
                 {errors.price ? <p className="text-danger">{errors.price.properties.message}</p>: ""}
             </div>
             <div className="form-group">
